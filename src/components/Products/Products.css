@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Glory", sans-serif;
+}
+
+h1 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 60px;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 50px 12px;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    height: 6px;
+    background-color: #007BFF;
+    border-radius: 60px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(250px, 1fr));
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.product-card {
+    padding: 12px;
+    border: 1px solid #32323232;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    width: 220px;
+    height: 170px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #32323232;
+    display: flex;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #323232;
+    margin: 12px 0;
+}
+
+.product-card p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #32323296;
+}
+
+.prices {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    margin: 12px 0 12px 0;
+}
+
+.prices .current-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #28A745;
+}
+
+.prices .old-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #DC3545;
+}
+
+.btns-container {
+    display: flex;
+    gap: 6px;
+    margin-top: auto;
+}
+
+.cart-btn {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 0px 0px 0px 6px;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+.cart-btn span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.cart-btn i{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.fav-btn {
+    aspect-ratio: 1/1;
+    flex-basis: 50px;
+    display: flex;
+    font-size: 22px;
+    color: #007BFF;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid #007BFF;
+    border-radius: 0px 0px 6px 0px;
+    cursor: pointer;
+}
